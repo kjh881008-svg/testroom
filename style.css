@@ -314,7 +314,7 @@ input:checked + .slider:before {
     border-radius: 50%;
 }
 
-.contact-container {
+.contact-container, .disqus-container {
     background: var(--container-bg-light);
     padding: 50px;
     border-radius: 20px;
@@ -325,11 +325,11 @@ input:checked + .slider:before {
     transition: background 0.3s;
 }
 
-body[data-theme="dark"] .contact-container {
+body[data-theme="dark"] .contact-container, body[data-theme="dark"] .disqus-container {
     background: var(--container-bg-dark);
 }
 
-.contact-container h2 {
+.contact-container h2, .disqus-container h2 {
     text-align: center;
     margin-bottom: 10px;
     font-size: 2em;
