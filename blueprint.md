@@ -1,28 +1,21 @@
 
-# 프로젝트 개요
+# Lotto Number Generator
 
-이 프로젝트는 1부터 45까지의 숫자 중 6개의 고유한 숫자를 무작위로 생성하는 로또 번호 추첨기입니다.
+## Overview
 
-# 스타일 및 디자인
+This is a simple web application that generates lottery numbers for the user. The user can select the number of games they want to play, and the application will generate the corresponding number of lottery tickets with 6 unique numbers each.
 
-*   **색상 팔레트:**
-    *   배경: `#f0f0f0`
-    *   앱 컨테이너: `#ffffff`
-    *   버튼: `#4CAF50` (녹색)
-    *   버튼 텍스트: `#ffffff`
-*   **글꼴:**
-    *   시스템 기본 글꼴
-*   **레이아웃:**
-    *   중앙 정렬
-    *   반응형 디자인
+## Design and Features
 
-# 기능
+*   **UI/UX:** The application has a modern and visually appealing design with a gradient background, rounded corners, and smooth animations.
+*   **Responsive Design:** The layout is responsive and adapts to different screen sizes, making it usable on both desktop and mobile devices.
+*   **Functionality:**
+    *   Users can choose to generate 1, 5, or 10 games at a time.
+    *   A "Draw" button initiates the number generation process.
+    *   A "Clear" button resets the results.
+    *   The generated numbers are displayed in a clear and organized manner.
+    *   The application provides feedback to the user during the drawing process.
 
-*   "번호 생성" 버튼을 클릭하면 6개의 새로운 무작위 번호가 생성됩니다.
-*   생성된 번호는 시각적으로 구분되어 표시됩니다.
+## Current Plan
 
-# 현재 계획
-
-*   `index.html`: 로또 번호 추첨기의 기본 구조를 설정합니다.
-*   `style.css`: 앱의 스타일을 지정합니다.
-*   `main.js`: 로또 번호 생성 논리를 구현합니다.
+*   Deploy the application to Firebase Hosting.
