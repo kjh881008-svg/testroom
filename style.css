@@ -24,6 +24,7 @@ body {
     background: var(--bg-color-light);
     color: var(--text-color-light);
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
@@ -311,4 +312,71 @@ input:checked + .slider:before {
 
 .slider.round:before {
     border-radius: 50%;
+}
+
+.contact-container {
+    background: var(--container-bg-light);
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    max-width: 750px;
+    margin-top: 30px;
+    transition: background 0.3s;
+}
+
+body[data-theme="dark"] .contact-container {
+    background: var(--container-bg-dark);
+}
+
+.contact-container h2 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 2em;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #bbb;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #555;
+    background: #333;
+    color: #fff;
+    font-size: 1em;
+}
+
+.btn-submit {
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    color: white;
+    width: 100%;
+    padding: 15px;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+body[data-theme="dark"] .btn-submit {
+    background: linear-gradient(135deg, #00F260 0%, #0575E6 100%);
+}
+
+.btn-submit:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
 }
